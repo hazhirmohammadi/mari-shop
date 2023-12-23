@@ -10,5 +10,5 @@ document.querySelector('#app').innerHTML = `
     
   </body>
 `;
-
+//initial
 setupCounter(document.querySelector('#counter'));
