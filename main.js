@@ -2,7 +2,7 @@ import './style.css';
 import {Style} from "./style.js";
 import {Pak1,Pak3,Pak2,BgHeader} from "./public/assets/images";
 import { setupCounter } from './counter.js'
-import {Logo, searchIcon, cartShop, menuIcon, LogoSm} from "./public/assets/icons/index.js";
+import {Logo, searchIcon, cartShop, menuIcon, LogoSm, truckFast, safeHome, coin} from "./public/assets/icons/index.js";
 
 document.querySelector('#app').innerHTML = `
   <body class="h-full ${Style.maximumSize}">
@@ -101,8 +101,43 @@ document.querySelector('#app').innerHTML = `
             </div>
         </div>
         <!--Services-->
-        <div>
-        
+        <div class="${Style.paddingX} ${Style.paddingY}">
+              <div class="flex md:flex-row flex-col lg:gap-x-8 gap-y-8">
+              
+                  <div class="flex flex-row gap-x-6">
+                       <img src="${truckFast}"  class="h-fit max-sm:w-[32px] max-sm:h-[32px]" alt="truckFast">
+                      <div class="flex flex-col ">
+                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
+                         <p class="text-[#717378] text-base font-normal leading-6">
+                             Green Society provides Canada Post Xpress Shipping right to your doorstep! 
+                             You can also opt in for shipping insurance. For orders over $149, shipping is free!
+                         </p>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-row gap-x-6">
+                       <img src="${safeHome}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" width="56" height="56" alt="truckFast">
+                      <div class="flex flex-col ">
+                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
+                         <p class="text-[#717378] text-base font-normal leading-6">
+                             Our secure payment system accepts the most common forms of payments making the checkout process quicker! 
+                             The payments we accept are debit, all major credit cards, and cryptocurrency.
+                         </p>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-row gap-x-6">
+                       <img src="${coin}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" alt="truckFast">
+                      <div class="flex flex-col ">
+                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
+                         <p class="text-[#717378] text-base font-normal leading-6">
+                             Here at Green Society, we take pride in the quality of our products and service. 
+                             Our prices are set to ensure you receive your medication at a reasonable price and safely
+                         </p>
+                      </div>
+                  </div>
+                  
+              </div>
         </div>
     </header>
     
