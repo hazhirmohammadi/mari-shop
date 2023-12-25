@@ -6,14 +6,13 @@ import {Logo, searchIcon, cartShop, menuIcon, LogoSm, truckFast, safeHome, coin}
 
 document.querySelector('#app').innerHTML = `
   <body class="h-full ${Style.maximumSize}">
-     <!--Header-->
-     <div class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
+      <!--Green offer-->
+      <div class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
             <span class="text-white lg:text-[14px] text-[10px] ">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</span>
             <span class="text-white font-bold lg:text-[14px] text-[10px]">23 : 15 : 00</span>
      </div>
-     
+      <!-- Header-->
       <header class="flex flex-col ${Style.maximumSize}">
-
         <nav class="flex  flex-col py-[14px] ${Style.paddingX}">
             <div class="w-full flex justify-between items-center">
                   <!-- Logo-->
@@ -100,15 +99,16 @@ document.querySelector('#app').innerHTML = `
                 </div>
             </div>
         </div>
+      </header>
         <!--Services-->
-        <div class="${Style.paddingX} ${Style.paddingY}">
-              <div class="flex md:flex-row flex-col lg:gap-x-8 gap-y-8">
+        <div class="${Style.paddingX} ${Style.paddingY} ${Style.maximumSize}">
+              <div class="flex md:flex-row flex-col lg:gap-x-6 gap-y-8">
               
-                  <div class="flex flex-row gap-x-6">
-                       <img src="${truckFast}"  class="h-fit max-sm:w-[32px] max-sm:h-[32px]" alt="truckFast">
+                  <div class="flex flex-row  gap-x-6">
+                       <img src="${truckFast}"  class="lg:w-[54px] lg:h-[54px]  w-[32px] h-[32px] self-start" alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl max-[1024px]:text-[16px] text-[#1A1E26] font-medium mb-4 text-left -tracking-[0.5px]">Reliable Shipping</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Green Society provides Canada Post Xpress Shipping right to your doorstep! 
                              You can also opt in for shipping insurance. For orders over $149, shipping is free!
                          </p>
@@ -116,21 +116,21 @@ document.querySelector('#app').innerHTML = `
                   </div>
                   
                   <div class="flex flex-row gap-x-6">
-                       <img src="${safeHome}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" width="56" height="56" alt="truckFast">
+                       <img src="${safeHome}" class="lg:w-[54px] lg:h-[54px]  w-[36px] h-[36px] self-start"  alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl text-[#1A1E26] font-medium mb-4 text-left ">You’re Safe With Us</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Our secure payment system accepts the most common forms of payments making the checkout process quicker! 
                              The payments we accept are debit, all major credit cards, and cryptocurrency.
                          </p>
                       </div>
                   </div>
                   
-                  <div class="flex flex-row gap-x-6">
-                       <img src="${coin}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" alt="truckFast">
+                  <div class="flex flex-row gap-x-6 ">
+                       <img src="${coin}" class="lg:w-[54px] lg:h-[54px]  w-[36px] h-[36px] self-start" alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl  text-[#1A1E26] font-medium mb-4 text-left ">Best Quality & Pricing</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Here at Green Society, we take pride in the quality of our products and service. 
                              Our prices are set to ensure you receive your medication at a reasonable price and safely
                          </p>
@@ -139,9 +139,13 @@ document.querySelector('#app').innerHTML = `
                   
               </div>
         </div>
-    </header>
-    
-    
+        <!-- Slogan-->
+        <div class=" ${Style.paddingX} ${Style.maximumSize}">
+            <h3 class="lg:text-[64px] text-[32px] max-[320px]:text-[24px] m-auto text-center lg:mt-[120px] mt-[64px] lg:mb-16 mb-8 text-[#1A1E26] font-bold
+               max-w-[839px] lg:leading-[70px] leading-[38.4px] lg:-tracking-[4px] -tracking-[1.5px]">
+               BEST DISPENSARY TO BUY WEED ONLINE IN CANADA
+            </h3>
+        </div>
     
   </body>
 `;
