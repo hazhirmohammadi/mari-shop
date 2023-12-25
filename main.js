@@ -1,8 +1,18 @@
 import './style.css';
 import {Style} from "./style.js";
-import {Pak1,Pak3,Pak2,BgHeader} from "./public/assets/images";
-import { setupCounter } from './counter.js'
-import {Logo, searchIcon, cartShop, menuIcon, LogoSm, truckFast, safeHome, coin} from "./public/assets/icons/index.js";
+import {Pak1, Pak3, Pak2, BgHeader} from "./public/assets/images";
+import {setupCounter} from './counter.js'
+import {
+   Logo,
+   searchIcon,
+   cartShop,
+   menuIcon,
+   LogoSm,
+   truckFast,
+   safeHome,
+   coin,
+   star, arrowRight, arrowLeft
+} from "./public/assets/icons/index.js";
 
 document.querySelector('#app').innerHTML = `
   <body class="h-full ${Style.maximumSize}">
@@ -160,7 +170,7 @@ document.querySelector('#app').innerHTML = `
            </div>
            <!-- product-->
            <div class="grid grid-cols-4 mt-16">
-               <div class="col-span-1 w-full h-full">
+               <div class="col-span-1 w-full h-full z-40">
                    <div class="w-[379px] h-[556px] relative rounded-2xl bg-[#05422C] flex flex-col justify-center   ">
                        <img class="z-10 top-0 right-0 absolute" src="public/assets/images/vector.png" alt="">
                        <img class="z-20 mb-5 w-[213px] h-[213px] self-center" src="public/assets/images/image-13.png" alt="">
@@ -176,8 +186,251 @@ document.querySelector('#app').innerHTML = `
                        </div>
                    </div>
                </div>
-               <div class="col-span-3">
-   
+               <div class="col-span-3 relative">
+                   <button class="nxt-btn  p-2  right-[2%] bg-[#FFFFFF] shadow-lg shadow-gray-500  top-1/3 rounded-full absolute z-20"><img src="${arrowRight}" alt=""></button>
+                     <div class="product-container flex flex-row items-center w-full overflow-x-scroll gap-x-6">
+                        <!-- card -->
+                           <div class="rounded-lg w-[291px] h-[568] ml-32">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                        <!-- card -->
+                            <div class="rounded-lg w-[291px] h-[568] ">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                        <!-- card -->
+                           <div class="rounded-lg w-[291px] h-[568] ">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                        <!-- card -->
+                          <div class="rounded-lg w-[291px] h-[568] ">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                        <!-- card -->
+                           <div class="rounded-lg w-[291px] h-[568] ">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                        <!-- card -->
+                          <div class="rounded-lg w-[291px] h-[568] ">
+                               <div class="bg-[#F4F4F4] w-full flex justify-center items-center">
+                                   <img src="public/assets/images/image-14.png" alt="">
+                               </div>
+                               <div class="flex flex-col  w-[291px]">
+                                   <div class="flex flex-col">
+                                       <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                                       <span class="text-[#1A1E26] text-lg text-center font-normal leading-[27px]">
+                                          2 Oz Deal Watermelon Zkittles + Purple Gushers
+                                      </span>
+                                       <div class="flex flex-row gap-x-3 my-2 mx-auto">
+                                           <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                               <img class="mr-[6px]" src="${star}" alt="star">
+                                               <span>4.6/5</span>
+                                           </div>
+                                           <div class="flex flex-row items-center">
+                                               <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                               <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                           </div>
+                                       </div>
+                                       <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                                           <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="flex flex-col justify-center gap-y-5">
+                                   <div class="flex flex-row gap-x-1 justify-center items-center">
+                                       <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                                       <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                                   </div>
+                                   <div class="flex flex-row items-center text-[#1A1E26]">
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">28g</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/2lb</span>
+                                       <span class="text-xs font-normal py-1 px-[10] text-center">1/4lb</span>
+                                   </div>
+                                   <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                               </div>
+                           </div>
+                        <!--End Card-->
+                     </div>
+                  <button class="pre-btn p-2 bg-[#FFFFFF] shadow-lg shadow-gray-500 left-[12%] top-1/3 rounded-full absolute z-20"><img src="${arrowLeft}" alt=""></button>
                </div>
            </div>
             
@@ -185,10 +438,25 @@ document.querySelector('#app').innerHTML = `
   </body>
 `;
 //initial
-setupCounter(document.querySelector('#counter'));
+// setupCounter(document.querySelector('#counter'));
 
 
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
 
+productContainers.forEach((item, i) => {
+   console.log(11)
+   let containerDimensions = item.getBoundingClientRect();
+   let containerWidth = containerDimensions.width;
 
+   nxtBtn[i].addEventListener('click', () => {
+      console.log(12)
+      item.scrollLeft += containerWidth;
+   })
 
-
+   preBtn[i].addEventListener('click', () => {
+      console.log(13)
+      item.scrollLeft -= containerWidth;
+   })
+})
