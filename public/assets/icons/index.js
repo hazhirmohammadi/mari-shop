@@ -6,7 +6,7 @@ import menuIcon from "./menu.svg"
 import coin from "./coin.svg";
 import safeHome from "./safe-home.png";
 import truckFast from "./truck-fast.svg";
-
+//primary
 export {
    Logo,
    LogoSm,

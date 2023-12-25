@@ -6,14 +6,13 @@ import {Logo, searchIcon, cartShop, menuIcon, LogoSm, truckFast, safeHome, coin}
 
 document.querySelector('#app').innerHTML = `
   <body class="h-full ${Style.maximumSize}">
-     <!--Header-->
-     <div class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
+      <!--Green offer-->
+      <div class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
             <span class="text-white lg:text-[14px] text-[10px] ">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</span>
             <span class="text-white font-bold lg:text-[14px] text-[10px]">23 : 15 : 00</span>
      </div>
-     
+      <!-- Header-->
       <header class="flex flex-col ${Style.maximumSize}">
-
         <nav class="flex  flex-col py-[14px] ${Style.paddingX}">
             <div class="w-full flex justify-between items-center">
                   <!-- Logo-->
@@ -100,15 +99,16 @@ document.querySelector('#app').innerHTML = `
                 </div>
             </div>
         </div>
+      </header>
         <!--Services-->
-        <div class="${Style.paddingX} ${Style.paddingY}">
-              <div class="flex md:flex-row flex-col lg:gap-x-8 gap-y-8">
+        <div class="${Style.paddingX} ${Style.paddingY} ${Style.maximumSize}">
+              <div class="flex md:flex-row flex-col lg:gap-x-6 gap-y-8">
               
-                  <div class="flex flex-row gap-x-6">
-                       <img src="${truckFast}"  class="h-fit max-sm:w-[32px] max-sm:h-[32px]" alt="truckFast">
+                  <div class="flex flex-row  gap-x-6">
+                       <img src="${truckFast}"  class="lg:w-[54px] lg:h-[54px]  w-[32px] h-[32px] self-start" alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl max-[1024px]:text-[16px] text-[#1A1E26] font-medium mb-4 text-left -tracking-[0.5px]">Reliable Shipping</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Green Society provides Canada Post Xpress Shipping right to your doorstep! 
                              You can also opt in for shipping insurance. For orders over $149, shipping is free!
                          </p>
@@ -116,21 +116,21 @@ document.querySelector('#app').innerHTML = `
                   </div>
                   
                   <div class="flex flex-row gap-x-6">
-                       <img src="${safeHome}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" width="56" height="56" alt="truckFast">
+                       <img src="${safeHome}" class="lg:w-[54px] lg:h-[54px]  w-[36px] h-[36px] self-start"  alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl text-[#1A1E26] font-medium mb-4 text-left ">You’re Safe With Us</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Our secure payment system accepts the most common forms of payments making the checkout process quicker! 
                              The payments we accept are debit, all major credit cards, and cryptocurrency.
                          </p>
                       </div>
                   </div>
                   
-                  <div class="flex flex-row gap-x-6">
-                       <img src="${coin}" class="h-fit max-sm:w-[36px] max-sm:h-[36px]" alt="truckFast">
+                  <div class="flex flex-row gap-x-6 ">
+                       <img src="${coin}" class="lg:w-[54px] lg:h-[54px]  w-[36px] h-[36px] self-start" alt="truckFast">
                       <div class="flex flex-col ">
-                         <span class="text-2xl text-[#1A1E26] font-medium mb-4 text-left">Reliable Shipping</span>
-                         <p class="text-[#717378] text-base font-normal leading-6">
+                         <span class="lg:text-2xl max-md:text-xl  text-[#1A1E26] font-medium mb-4 text-left ">Best Quality & Pricing</span>
+                         <p class="text-[#717378] lg:text-base text-sm font-normal leading-6">
                              Here at Green Society, we take pride in the quality of our products and service. 
                              Our prices are set to ensure you receive your medication at a reasonable price and safely
                          </p>
@@ -139,11 +139,56 @@ document.querySelector('#app').innerHTML = `
                   
               </div>
         </div>
-    </header>
-    
-    
-    
+        <!-- Slogan-->
+        <div class=" ${Style.paddingX} ${Style.maximumSize}">
+            <h3 class="lg:text-[64px] text-[32px] max-[320px]:text-[24px] m-auto text-center lg:mt-[120px] mt-[64px] lg:mb-16 mb-8 text-[#1A1E26] font-bold
+               max-w-[839px] lg:leading-[70px] leading-[38.4px] lg:-tracking-[4px] -tracking-[1.5px]">
+               BEST DISPENSARY TO BUY WEED ONLINE IN CANADA
+            </h3>
+        </div>
+        <!-- Product -->
+        <div class="${Style.paddingX2} ${Style.maximumSize} flex flex-col">
+           <!-- slider-->
+           <div class="slider flex items-center gap-x-8  flex-row">
+               <div class="w-full py-4 px-5 text-base text-[#05422C] text-center bg-[#F2F6F4]
+                font-bold border-[1px] border-[#05422C] rounded-full whitespace-nowrap cursor-pointer"
+                >Best Sellers</div>
+               <div class="w-full py-4 px-5 text-base text-center font-normal whitespace-nowrap cursor-pointer"
+               >Bundles & Promotions</div>
+               <div class="w-full py-4 px-5 text-base text-center font-normal whitespace-nowrap cursor-pointer"
+               >On Sale</div>
+           </div>
+           <!-- product-->
+           <div class="grid grid-cols-4 mt-16">
+               <div class="col-span-1 w-full h-full">
+                   <div class="w-[379px] h-[556px] relative rounded-2xl bg-[#05422C] flex flex-col justify-center   ">
+                       <img class="z-10 top-0 right-0 absolute" src="public/assets/images/vector.png" alt="">
+                       <img class="z-20 mb-5 w-[213px] h-[213px] self-center" src="public/assets/images/image-13.png" alt="">
+                       <div class="flex-col flex justify-center">
+                           <span class="mb-2 self-center text-xl text-white font-bold">Shop our Best Sellers</span>
+                               <div class="w-full ">
+                                   <p class="mb-5 text-center text-[#FFFFFF99] text-sm font-normal max-w-[216px] m-auto">
+                                     Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis
+                                     feugiat.
+                                   </p>
+                              </div> 
+                           <a class="text-center text-[#17AF26] font-medium underline text-sm" href="#">View All</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-span-3">
+   
+               </div>
+           </div>
+            
+        </div>
   </body>
 `;
 //initial
 setupCounter(document.querySelector('#counter'));
+
+
+
+
+
+
