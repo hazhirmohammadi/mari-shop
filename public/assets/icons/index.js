@@ -6,7 +6,10 @@ import menuIcon from "./menu.svg"
 import coin from "./coin.svg";
 import safeHome from "./safe-home.png";
 import truckFast from "./truck-fast.svg";
-//primary
+import star from "./star.svg";
+import arrowLeft from "./arrow-left.svg";
+import arrowRight from "./arrow-right.svg";
+
 export {
    Logo,
    LogoSm,
@@ -16,4 +19,7 @@ export {
    safeHome,
    coin,
    truckFast,
+   star,
+   arrowLeft,
+   arrowRight,
 }
