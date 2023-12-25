@@ -146,8 +146,49 @@ document.querySelector('#app').innerHTML = `
                BEST DISPENSARY TO BUY WEED ONLINE IN CANADA
             </h3>
         </div>
-    
+        <!-- Product -->
+        <div class="${Style.paddingX2} ${Style.maximumSize} flex flex-col">
+           <!-- slider-->
+           <div class="slider flex items-center gap-x-8  flex-row">
+               <div class="w-full py-4 px-5 text-base text-[#05422C] text-center bg-[#F2F6F4]
+                font-bold border-[1px] border-[#05422C] rounded-full whitespace-nowrap cursor-pointer"
+                >Best Sellers</div>
+               <div class="w-full py-4 px-5 text-base text-center font-normal whitespace-nowrap cursor-pointer"
+               >Bundles & Promotions</div>
+               <div class="w-full py-4 px-5 text-base text-center font-normal whitespace-nowrap cursor-pointer"
+               >On Sale</div>
+           </div>
+           <!-- product-->
+           <div class="grid grid-cols-4 mt-16">
+               <div class="col-span-1 w-full h-full">
+                   <div class="w-[379px] h-[556px] relative rounded-2xl bg-[#05422C] flex flex-col justify-center   ">
+                       <img class="z-10 top-0 right-0 absolute" src="public/assets/images/vector.png" alt="">
+                       <img class="z-20 mb-5 w-[213px] h-[213px] self-center" src="public/assets/images/image-13.png" alt="">
+                       <div class="flex-col flex justify-center">
+                           <span class="mb-2 self-center text-xl text-white font-bold">Shop our Best Sellers</span>
+                               <div class="w-full ">
+                                   <p class="mb-5 text-center text-[#FFFFFF99] text-sm font-normal max-w-[216px] m-auto">
+                                     Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius lorem blandit lectus magnis
+                                     feugiat.
+                                   </p>
+                              </div> 
+                           <a class="text-center text-[#17AF26] font-medium underline text-sm" href="#">View All</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-span-3">
+   
+               </div>
+           </div>
+            
+        </div>
   </body>
 `;
 //initial
 setupCounter(document.querySelector('#counter'));
+
+
+
+
+
+
