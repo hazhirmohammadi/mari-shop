@@ -16,6 +16,15 @@ body {
 .bg{
   background: url("public/assets/images/bg-header.png");
 }
+.slider{
+  overflow-x: scroll;
+}
+.product-container {
+  scroll-behavior: smooth;
+}
+.comment-container{
+  scroll-behavior: smooth;
+}
 
 
 
