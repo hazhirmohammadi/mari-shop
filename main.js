@@ -17,12 +17,12 @@ import {
 document.querySelector('#app').innerHTML = `
   <body class="h-full ${Style.maximumSize}">
         <!--Green offer-->
-        <div class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
+        <section class="flex justify-center items-center bg-[#05422C] py-2 gap-4">
             <span class="text-white lg:text-[14px] text-[10px] ">LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.</span>
             <span class="text-white font-bold lg:text-[14px] text-[10px]">23 : 15 : 00</span>
-     </div>
+        </section>
         <!-- Header-->
-        <header class="flex flex-col ${Style.maximumSize}">
+        <section class="flex flex-col ${Style.maximumSize}">
         <nav class="flex  flex-col py-[14px] ${Style.paddingX}">
             <div class="w-full flex justify-between items-center">
                   <!-- Logo-->
@@ -109,9 +109,9 @@ document.querySelector('#app').innerHTML = `
                 </div>
             </div>
         </div>
-      </header>
+      </section>
         <!--Services-->
-        <div class="${Style.paddingX} ${Style.paddingY} ${Style.maximumSize}">
+        <section class="${Style.paddingX} ${Style.paddingY} ${Style.maximumSize}">
               <div class="flex md:flex-row flex-col lg:gap-x-6 gap-y-8">
               
                   <div class="flex flex-row  gap-x-6">
@@ -148,16 +148,16 @@ document.querySelector('#app').innerHTML = `
                   </div>
                   
               </div>
-        </div>
+        </section>
         <!-- Slogan-->
-        <div class=" ${Style.paddingX} ${Style.maximumSize}">
+        <section class=" ${Style.paddingX} ${Style.maximumSize}">
             <h3 class="lg:text-[64px] text-[32px] max-[320px]:text-[24px] m-auto text-center lg:mt-[120px] mt-[64px] lg:mb-16 mb-8 text-[#1A1E26] font-bold
                max-w-[839px] lg:leading-[70px] leading-[38.4px] lg:-tracking-[4px] -tracking-[1.5px]">
                BEST DISPENSARY TO BUY WEED ONLINE IN CANADA
             </h3>
-        </div>
+        </section>
         <!-- Product -->
-        <div class=" ${Style.maximumSize} flex flex-col">
+        <section class=" ${Style.maximumSize} flex flex-col">
            <!-- slider-->
            <div class="slider flex items-center gap-x-8  flex-row ${Style.paddingX2}">
                <div class="w-full py-4 px-5 text-base text-[#05422C] text-center bg-[#F2F6F4]
@@ -593,9 +593,9 @@ document.querySelector('#app').innerHTML = `
                    <button class="pre-btn p-2 bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500 left-[15%] top-[40%] rounded-full absolute lg:block hidden z-20"><img src="${arrowLeft}" alt=""></button>
                </div>
            </div>
-        </div>
+        </section>
         <!-- Comments  -->
-        <div class=" ${Style.maximumSize} ">
+        <section class=" ${Style.maximumSize} ">
               <!--Comment Header-->
               <div class="lg:mt-[136px] mt-16 lg:mb-16 mb-8 ${Style.paddingX2}">
                  <h4 class="text-[#1A1E26] lg:text-[64px] text-[32px] font-bold 
@@ -606,7 +606,7 @@ document.querySelector('#app').innerHTML = `
               <div class="lg:grid grid-cols-4 flex flex-col">
                   <!--  Green Card  -->
                   <div class="col-span-1 z-40 w-full h-full lg:mb-0 mb-8  ${Style.paddingX2}">
-                    <div class="bg-[#05422C] p-10 flex flex-col justify-start rounded-2xl">
+                    <div class="bg-[#05422C] w-[379px] p-10 flex flex-col justify-start rounded-2xl">
                        <div class="border-b-[1px] border-[#346654] pb-8">
                         <h5 class="lg:text-[32px] text-[24px] text-white lg:font-[600] font-bold self-start lg:-tracking-[1.5px] -tracking-[0.5px] 
                         lg:leading-[38px] leading-[36px]">VOTED BEST ONLINE DISPENSARY IN CANADA</h5>
@@ -625,7 +625,7 @@ document.querySelector('#app').innerHTML = `
                                     <img src="${star}" alt="star">
                                     <img src="${star}" alt="star">
                                 </div>
-                                <div class="pl-6 flex flex-row items-center gap-x-1">
+                                <div class="pl-6 flex flex-row items-center gap-x-1 ">
                                     <span class="text-base text-white">on 135</span>
                                     <span class="text-[#648A7C]">Reviews</span>
                                 </div>
@@ -639,7 +639,7 @@ document.querySelector('#app').innerHTML = `
                    <button class="com-nxt-btn  p-2  right-[0%] bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500  top-[50%] rounded-full absolute lg:block hidden z-20"><img src="${arrowRight}" alt=""></button>
                       <div class="comment-container flex flex-row items-center w-full overflow-x-scroll   gap-x-8">
                          <!--Start Comment-->
-                         <div class="flex flex-col p-10 w-[379px] h-[424px] bg-[#eae9e9] rounded-lg ml-4">
+                         <div class="flex flex-col p-10 w-[379px] h-[424px] bg-[#eae9e9] rounded-lg ml-36">
                              <div class=" flex flex-row items-center border-b-[1px] border-[#C8C9CB] pb-8">
                                <img class="mr-8" src="${avatar_1}" alt="">
                                <span class="text-base font-normal">Vikki Starr</span>
@@ -801,10 +801,77 @@ document.querySelector('#app').innerHTML = `
                          </div>
                          <!--End Comment-->
                       </div>
-                   <button class="com-pre-btn p-2 bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500 left-[0%] top-[50%] rounded-full absolute lg:block hidden z-20"><img src="${arrowLeft}" alt=""></button>                
+                   <button class="com-pre-btn p-2 bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500 left-[13%] top-[50%] rounded-full absolute lg:block hidden z-20"><img src="${arrowLeft}" alt=""></button>                
                  </div>
               </div>
-        </div>
+        </section>
+        <!-- Weed Shop-->
+        <section class="${Style.maximumSize} ${Style.paddingMain} flex flex-col">
+              <div class="lg:mt-[160px] mt-16 lg:mb-16 mb-6 ">
+                 <h4 class="text-[#1A1E26] lg:text-[64px] text-[32px] font-bold uppercase
+                 lg:-tracking-[4px] -tracking-[1.5px] lg:leading-[70px] leading-[38.4px]">
+                 CHOOSE YOUR WEED</h4>
+              </div>
+              <div class="flex lg:flex-row flex-col items-center">
+                 <div class="mr-10 lg:mb-0 mb-6 ">
+                   <span class="text-2xl font-normal">Filter by Interest</span>
+                 </div>
+                 <div class="flex items-center">
+                  <ul class=" flex flex-row overflow-x-scroll gap-x-6">
+                    <li class="text-base font-normal text-[#05422C] px-5 rounded-full bg-[#F2F6F4] border-[1px] border-[#05422C]">Flowers</li>
+                    <li class="text-base font-normal text-[#1A1E26]">Mushrooms</li>
+                    <li class="text-base font-normal text-[#1A1E26]">Concentrate</li>
+                    <li class="text-base font-normal text-[#1A1E26]">Edibles</li>
+                    <li class="text-base font-normal text-[#1A1E26]">Shop All Weed</li>
+                  </ul>
+                </div>
+             </div>
+              <!-- Weed Cards-->
+              <div class="flex flex-wrap">
+                 <!-- card -->
+                  <div class="rounded-lg md:w-[276px]  md:h-[568px] w-[159px] h-[491px]">
+                    <div class="bg-[#F4F4F4] w-full flex justify-center items-center h-[240px]  ">
+                          <img src="public/assets/images/image-14.png" alt="">
+                    </div>
+                    <div class="flex flex-col  w-[291px]">
+                       <div class="flex flex-col">
+                            <span class="uppercase text-[#9D9EA2] text-sm text-center font-light mt-6 mb-2">FLOWER</span>
+                            <span class="text-[#1A1E26] md:text-lg text-base text-center font-normal md:leading-[27px] leading-[24px]">
+                    2 Oz Deal Watermelon Zkittles + Purple Gushers
+                </span>
+                            <div class="flex flex-row gap-x-3 my-2 mx-auto"            >    
+                                <div class="flex flex-row items-center border-r-[1px] border-[#C8C9CB]">
+                                    <img class="mr-[6px]" src="${star}" alt="star">
+                                    <span>4.6/5</span>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <span class="mr-[6px] text-[#060709] text-sm">135</span>
+                                    <span class="text-[#C8C9CB] text-sm font-normal">Reviews</span>
+                                </div>
+                           </div>
+                            <div class="py-1 px-[10px] mx-auto bg-[#F2F6F4]">
+                             <span class="text-center text-[#05422C] text-xs ">Sativa 100%</span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-y-5">
+                       <div class="flex flex-row gap-x-1 justify-center items-center">
+                           <span class="text-[#EB2606]  text-base font-normal leading-5">$80.00</span>
+                           <span class="text-[#C8C9CB] font-light text-sm">/ gram</span>
+                       </div>
+                       <div class="flex flex-row items-center text-center text-[#1A1E26]">
+                           <span class="text-xs font-normal py-1  text-center">28g</span>
+                           <span class="text-xs font-normal py-1  px-[10px] text-center ">1/2lb</span>
+                           <span class="text-xs font-normal py-1  text-center">1/4lb</span>
+                       </div>
+                      <button class="px-6 py-2 text-white rounded-full text-center bg-[#17AF26] self-center">Add to Cart</button>
+                    </div>
+                 </div>
+                <!--End Card-->
+              </div>
+        </section>     
+             
+      
   </body>
 `;
 //initial
