@@ -912,7 +912,7 @@ document.querySelector('#app').innerHTML = `
         <section class="${Style.maximumSize}  ">
           <div class="flex flex-col relative size-full">
            <div class="${Style.paddingMain}">
-               <div class="z-10 rounded-3xl bg-friends bg-cover  relative lg:px-[120px] px-6 lg:py-24 py-10 ">
+               <div class="z-10 rounded-3xl bg-friends bg-cover  relative lg:px-[120px] px-6 lg:py-24 py-10 lg:-mb-36 -mb-28">
                <img class="z-30 absolute bottom-0 right-0 rounded-lg h-full" src="public/assets/images/friends-bg-2.svg" alt="">
                <img class="z-30 size-full absolute top-0 left-0" src="public/assets/images/friends-bg.svg" alt="">
                <div class=" z-50 w-full">
@@ -934,25 +934,25 @@ document.querySelector('#app').innerHTML = `
                <!--start-->
                <div class="flex flex-col justify-center ">
                    <div class="flex flex-col justify-center self-center mb-[73px] max-w-[948px]">
-                       <div class=" lg:text-[64px] text-[32px] text-white mb-6 leading-[70px] -tracking-[4px] text-center mt-40 self-center">
+                       <div class=" lg:text-[64px] text-[32px] text-white mb-6 lg:leading-[70px] leading-[38px] lg:-tracking-[4px] -tracking-[1.5px] text-center lg:mt-56 mt-[183px] self-center">
                            HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER
                            MARIJUANA
                        </div>
-                       <p class="mx-[79px] text-center text-[#9D9EA2] lg:text-base text-sm font-normal ">
+                       <p class="lg:mx-[79px] px-6 text-center text-[#9D9EA2] lg:text-base text-sm font-normal ">
                            Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible across
                            multiple platforms and simple to understand, meaning that more people can come to us to buy their
                            cannabis products online.
                        </p>
                    </div>
-                   <div class="flex flex-col justify-center mx-auto w-full   ">
-                       <div class="flex flex-row  items-center justify-center w-full">
+                   <div class="flex flex-col justify-center mx-auto w-full gap-y-8  ">
+                       <div class="flex flex-row  items-center justify-center max-sm:flex-col w-full">
                           <div class="flex flex-col justify-center  relative">
                               <div class=" top-0 left-0 absolute px-2 rounded-full bg-[#F2BC1B] text-[#05422C] text-center"
                               >1
                               </div>
-                              <img class="size-[144px] self-center" src="${register}" alt="">
+                              <img class="md:size-[144px] size-[100px] self-center" src="${register}" alt="">
                               <div class="flex flex-col justify-center">
-                                  <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium">REGISTER</span>
+                                  <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium my-6">REGISTER</span>
                                   <p class=" max-w-[548px] text-center text-[#9D9EA2] lg:text-base text-sm font-normal text-wrap">
                                       Sign up for an account with us. This is quick and simple. We don’t require any more details
                                       from you than the bare minimum needed for you to place an order and get your product
@@ -964,9 +964,9 @@ document.querySelector('#app').innerHTML = `
                                  <div class=" top-0 left-0 absolute px-2 rounded-full bg-[#F2BC1B] text-[#05422C] text-center"
                                  >2
                                  </div>
-                                 <img class="size-[144px] self-center" src="${shop}" alt="">
+                                 <img class="md:size-[144px] size-[100px] self-center" src="${shop}" alt="">
                                  <div class="flex flex-col justify-center">
-                                     <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium">SHOP</span>
+                                     <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium my-6">SHOP</span>
                                      <p class="max-w-[548px] text-center text-[#9D9EA2] lg:text-base text-sm font-normal text-wrap">
                                          Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates
                                          and mushrooms there is bound to be something for everyone.
@@ -974,14 +974,14 @@ document.querySelector('#app').innerHTML = `
                                  </div>
                           </div>
                        </div>
-                       <div class="flex flex-row items-center justify-center w-full">
+                       <div class="flex flex-row items-center justify-center max-sm:flex-col w-full">
                            <div class="flex flex-col  justify-center relative">
                                <div class=" top-0 left-0 absolute px-2 rounded-full bg-[#F2BC1B] text-[#05422C] text-center"
                                >3
                                </div>
-                               <img class="size-[144px] self-center" src="${make_payment}" alt="">
+                               <img class="md:size-[144px] size-[100px] self-center" src="${make_payment}" alt="">
                                <div class="flex flex-col justify-center">
-                                   <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium">MAKE PAYMENT</span>
+                                   <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium my-6">MAKE PAYMENT</span>
                                    <p class="max-w-[548px] text-center text-[#9D9EA2] lg:text-base text-sm font-normal text-wrap">
                                        Pay securely. Our site boasts sturdy protection certificates to keep your card details and
                                        related data safe.
@@ -992,9 +992,9 @@ document.querySelector('#app').innerHTML = `
                                <div class=" top-0 left-0 absolute px-2 rounded-full bg-[#F2BC1B] text-[#05422C] text-center"
                                >4
                                </div>
-                               <img class="size-[144px] self-center" src="${relax}" alt="">
+                               <img class="md:size-[144px] size-[100px] self-center" src="${relax}" alt="">
                                <div class="flex flex-col justify-center">
-                                   <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium">RELAX</span>
+                                   <span class="text-center lg:text-[24px] text-[18px] text-white uppercase font-medium my-6">RELAX</span>
                                    <p class="max-w-[548px] text-center text-[#9D9EA2] lg:text-base text-sm font-normal text-wrap">
                                        Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will
                                        provide you with a tracking number so then you can follow your mail order marijuana every
