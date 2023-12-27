@@ -13,7 +13,10 @@ import avatar_1 from "./avatar-1.svg";
 import avatar_2 from "./avatar-2.svg";
 import avatar_3 from "./avatar-3.svg";
 import google from "./google.svg";
-
+import register from "./REGISTER.svg";
+import shop from "./SHOP.svg";
+import relax from "./RELAX.svg";
+import make_payment from "./MAKE-PAYMENT.svg";
 export {
    Logo,
    LogoSm,
@@ -30,4 +33,8 @@ export {
    avatar_2,
    avatar_3,
    google,
+   register,
+   shop,
+   relax,
+   make_payment,
 }
