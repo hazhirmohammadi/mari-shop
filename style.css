@@ -25,6 +25,10 @@ body {
 .comment-container{
   scroll-behavior: smooth;
 }
+.bg-friends{
+  background: url("public/assets/images/friends-bg.svg");
+  background: #05422C;
+}
 
 
 
