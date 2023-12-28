@@ -11,7 +11,18 @@ import {
    truckFast,
    safeHome,
    coin,
-   star, arrowRight, arrowLeft, google, avatar_1, register, shop, make_payment, relax
+   star,
+   arrowRight,
+   arrowLeft,
+   google,
+   avatar_1,
+   register,
+   shop,
+   make_payment,
+   relax,
+   customer_service,
+   carbon_security,
+   best_value, truck_bag, high_quality, trust
 } from "./public/assets/icons/index.js";
 
 document.querySelector('#app').innerHTML = `
@@ -606,7 +617,7 @@ document.querySelector('#app').innerHTML = `
               <div class="lg:grid grid-cols-4 flex flex-col">
                   <!--  Green Card  -->
                   <div class="col-span-1 z-40 w-full h-full lg:mb-0 mb-8  ${Style.paddingX2}">
-                    <div class="bg-[#05422C] w-[379px] p-10 flex flex-col justify-start rounded-2xl">
+                    <div class="bg-[#05422C] max-w-[379px] lg:p-10 p-6 flex flex-col justify-start rounded-2xl">
                        <div class="border-b-[1px] border-[#346654] pb-8">
                         <h5 class="lg:text-[32px] text-[24px] text-white lg:font-[600] font-bold self-start lg:-tracking-[1.5px] -tracking-[0.5px] 
                         lg:leading-[38px] leading-[36px]">VOTED BEST ONLINE DISPENSARY IN CANADA</h5>
@@ -639,7 +650,7 @@ document.querySelector('#app').innerHTML = `
                    <button class="com-nxt-btn  p-2  right-[0%] bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500  top-[50%] rounded-full absolute lg:block hidden z-20"><img src="${arrowRight}" alt=""></button>
                       <div class="comment-container flex flex-row items-center w-full overflow-x-scroll   gap-x-8">
                          <!--Start Comment-->
-                         <div class="flex flex-col p-10 w-[379px] h-[424px] bg-[#eae9e9] rounded-lg ml-36">
+                         <div class="flex flex-col p-10 w-[379px] h-[424px] bg-[#eae9e9] rounded-lg md:ml-36 ml-0">
                              <div class=" flex flex-row items-center border-b-[1px] border-[#C8C9CB] pb-8">
                                <img class="mr-8" src="${avatar_1}" alt="">
                                <span class="text-base font-normal">Vikki Starr</span>
@@ -1003,13 +1014,125 @@ document.querySelector('#app').innerHTML = `
                                </div>
                            </div>
                        </div>
-                       <button></button>
+                       <button class="lg:my-[100px] my-[50px] bg-[#17AF26] px-[56px] py-4 text-white text-[18px] text-center self-center rounded-full">
+                          Choose your Weed 
+                        </button>
                    </div>
                 </div>
                <!--End-->
              </div>
           </div>
         </section>
+        <!-- About us-->
+        <section class="${Style.maximumSize} ${Style.paddingMain}">
+           <div class="mt-[120px]">
+              <div>
+                 <h6 class="flex flex-col justify-start lg:text-[64px] text-[32px] text-[#1A1E26] lg:-tracking-[4px] -tracking-[1.5px] font-bold lg:leading-[70px] leading-[38px]">
+                     <span>WHAT MAKES US THE <span class="text-[#F2BC1B]">#1</span>
+                     </span>
+                     ONLINE MARIJUANA<br/>
+                     DISPENSARY IN CANADA?
+                 </h6>
+                 <div class="max-w-[789px] lg:mt-6 mt-4">
+                    <p class="text-[#717378] lg:text-base text-xs">
+                       When it comes to what makes us the foremost<span class="underline">online marijuana dispensary in Canada</span>, 
+                       we could wax lyrical about our positive qualities.
+                        Instead, to make this information clearer, 
+                        we've highlighted the six prioritized features that we feel makes us a cut above the rest.
+                    </p>
+                 </div>
+              </div>
+              <div class="grid lg:grid-cols-3 grid-cols-2 max-sm:grid-cols-1  gap-8">
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${customer_service}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            CUSTOMER SERVICE
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                            If your mail order marijuana becomes lost, stolen, or damaged during transit, we will send you a
+                            replacement completely free of charge. Free Canada Post Xpress shipping on all orders over $120
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${carbon_security}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            SECURITY
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                            When it comes to security, we only keep what details are necessary for you to have an account with us and make an order. 
+                            When it comes to shipping your mail order marijuana out, 
+                            we use only tamper-proof and discrete packaging so then what you’ve purchased is your business only.
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${best_value}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            BEST VALUE
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                           We are continually adjusting what we supply and our prices to ensure that we maintain an optimal balance of affordable and quality for our products. 
+                           We invest in the best quality strains that we can find and are always on the lookout for new, affordable and high quality weed products.
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${truck_bag}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            DELIVERY INSURANCE
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                            If your mail order marijuana becomes lost, stolen, or damaged during transit, we will send you a replacement completely free of charge. 
+                            Free Canada Post Xpress shipping on all orders over $120
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${high_quality}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            HIGHEST QUALITY
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                            All of our cannabis products are tested to ensure that they are the highest quality possible. 
+                            We work with expert suppliers and are always revising what makes a quality cannabis product to ensure that we have only the best available.
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+                <!-- Box Start-->
+                <div class="max-w-[379px] flex flex-col lg:p-8 p-4">
+                    <img class="self-start mb-8" src="${trust}" alt="">
+                    <div class="flex flex-col justify-start ">
+                        <span class="lg:text-[24px] text-[18px] text-[#1A1E26] mb-4">
+                            TRUST
+                        </span>
+                        <p class="lg:text-sm text-xs text-[#717378] font-normal leading-[21px]">
+                            With over 15 years in the weed business, you can rest assured that you will be taken care of.
+                             You can guarantee that we have your best interests in mind. Feel free to check out our reviews.
+                        </p>
+                    </div>
+                </div>
+                <!-- Box End-->
+              </div>
+                
+           </div>
+        </section>
+        
   </body>
 `;
 //initial
