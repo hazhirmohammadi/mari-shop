@@ -17,6 +17,14 @@ import register from "./REGISTER.svg";
 import shop from "./SHOP.svg";
 import relax from "./RELAX.svg";
 import make_payment from "./MAKE-PAYMENT.svg";
+import high_quality from "./high_quality.svg";
+import best_value from "./best_value.svg";
+import carbon_security from "./carbon_security.svg";
+import customer_service from "./customer_service.svg";
+import truck_bag from "./truck-bag.svg";
+import trust from "./TRUST.svg";
+
+
 export {
    Logo,
    LogoSm,
@@ -37,4 +45,11 @@ export {
    shop,
    relax,
    make_payment,
+   high_quality,
+   best_value,
+   carbon_security,
+   customer_service,
+   truck_bag,
+   trust,
+
 }
