@@ -1132,7 +1132,56 @@ document.querySelector('#app').innerHTML = `
                 
            </div>
         </section>
-        
+        <!--Weed Types-->
+        <section class="${Style.maximumSize} ${Style.paddingMain}">
+           <div class="grid-cols-3 grid border-t-[2px] border-[#717378] mt-32">
+              <div class="w-full p-8">
+                   <div class="w-[240px] mb-8">
+                           <img src="public/assets/images/types-1.svg" alt="">
+                   </div>
+                   <div>
+                       <span class="text-[#1A1E26] text-[32px] mb-4 self-start">Indica</span>
+                       <p class="text-[#717378] lg:text-sm text-xs mb-8">
+                           This type of cannabis is commonly taken by those who want to sink into a state of total relaxation in
+                           every limb. This reduces stress overall and can take your worries and fatigue away. Because of its
+                           relaxing effects, it is suggested to use this type of cannabis at night. It is particularly recommended
+                           for people who have trouble sleeping, be it due to insomnia, pain or other associated sleep issues.
+                       </p>
+                       <a class="underline text-base text-[#17AF26] self-start" href="#">Shop Indica</a>
+                   </div>
+              </div>
+              <div class="w-full p-8">
+                   <div class="w-[240px] mb-8">
+                           <img src="public/assets/images/types-2.svg" alt="">
+                   </div>
+                   <div>
+                       <span class="text-[#1A1E26] text-[32px] mb-4 self-start">Sativa</span>
+                       <p class="text-[#717378] lg:text-sm text-xs mb-8">
+                           This type of cannabis is commonly taken by those who want to sink into a state of total relaxation in
+                           every limb. This reduces stress overall and can take your worries and fatigue away. Because of its
+                           relaxing effects, it is suggested to use this type of cannabis at night. It is particularly recommended
+                           for people who have trouble sleeping, be it due to insomnia, pain or other associated sleep issues.
+                       </p>
+                       <a class="underline text-base text-[#17AF26] self-start" href="#">Shop Sativa</a>
+                   </div>
+              </div>
+              <div class="w-full p-8">
+                   <div class="w-[240px] mb-8">
+                           <img src="public/assets/images/types-3.svg" alt="">
+                   </div>
+                   <div>
+                       <span class="text-[#1A1E26] text-[32px] mb-4 self-start">Hybrids</span>
+                       <p class="text-[#717378] lg:text-sm text-xs mb-8">
+                           This type of cannabis is commonly taken by those who want to sink into a state of total relaxation in
+                           every limb. This reduces stress overall and can take your worries and fatigue away. Because of its
+                           relaxing effects, it is suggested to use this type of cannabis at night. It is particularly recommended
+                           for people who have trouble sleeping, be it due to insomnia, pain or other associated sleep issues.
+                       </p>
+                       <a class="underline text-base text-[#17AF26] self-start" href="#">Shop Hybrids</a>
+                   </div>
+              </div>
+           </div>
+        </section>
   </body>
 `;
 //initial
