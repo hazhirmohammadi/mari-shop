@@ -614,9 +614,9 @@ document.querySelector('#app').innerHTML = `
                  CUSTOMER TESTIMONIALS</h4>
               </div>
               <!--Comment section-->
-              <div class="lg:grid grid-cols-4 flex flex-col">
+              <div class="lg:grid grid-cols-7 flex flex-col">
                   <!--  Green Card  -->
-                  <div class="col-span-1 z-40 w-full h-full lg:mb-0 mb-8  ${Style.paddingX2}">
+                  <div class="col-span-3 z-40 w-full h-full lg:mb-0 mb-8  ${Style.paddingX2}">
                     <div class="bg-[#05422C] max-w-[379px] lg:p-10 p-6 flex flex-col justify-start rounded-2xl">
                        <div class="border-b-[1px] border-[#346654] pb-8">
                         <h5 class="lg:text-[32px] text-[24px] text-white lg:font-[600] font-bold self-start lg:-tracking-[1.5px] -tracking-[0.5px] 
@@ -646,7 +646,7 @@ document.querySelector('#app').innerHTML = `
                      </div>
                   </div>
                   <!--Sliders-->            
-                 <div class="col-span-3 relative ">
+                 <div class="col-span-4 relative ">
                    <button class="com-nxt-btn  p-2  right-[0%] bg-[#FFFFFF] hover:bg-green-200 shadow-lg shadow-gray-500  top-[50%] rounded-full absolute lg:block hidden z-20"><img src="${arrowRight}" alt=""></button>
                       <div class="comment-container flex flex-row items-center w-full overflow-x-scroll   gap-x-8">
                          <!--Start Comment-->
@@ -1134,7 +1134,7 @@ document.querySelector('#app').innerHTML = `
         </section>
         <!--Weed Types-->
         <section class="${Style.maximumSize} ${Style.paddingMain}">
-           <div class="grid-cols-3 grid border-t-[2px] border-[#717378] mt-32">
+           <div class="md:grid grid-cols-3 flex flex-col  border-t-[2px] border-[#717378] mt-32 mb-16">
               <div class="w-full p-8">
                    <div class="w-[240px] mb-8">
                            <img src="public/assets/images/types-1.svg" alt="">
@@ -1180,6 +1180,83 @@ document.querySelector('#app').innerHTML = `
                        <a class="underline text-base text-[#17AF26] self-start" href="#">Shop Hybrids</a>
                    </div>
               </div>
+           </div>
+        </section >
+        <!-- WEED EDUCATION-->
+        <section class="${Style.maximumSize} ${Style.paddingMain}">
+           <div class="flex flex-col">
+              <div class="flex flex-row items-center justify-between pb-8 border-b-[1px] border-[#C8C9CB]">
+                <div>
+                    <h6 class="text-[#1A1E26] lg:text-[32px] text-[24px] lg:leading-[38px] leading-[36px] font-medium
+                    lg:-tracking-[1.5px] -tracking-[0.5px] uppercase">WEED EDUCATION</h6>
+                </div>
+                <div>
+                    <span class="text-[#17AF26] underline lg:text-base text-sm">Show All</span>
+                </div>
+              </div>
+             
+             <div class="lg:grid grid-cols-3 flex flex-col pt-16 gap-x-8">
+                <!--box start-->
+                <div class=" flex flex-col ">
+                    <div class="mb-6 rounded-lg ">
+                        <img src="public/assets/images/edu-1.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <span class="text-[#717378] text-sm font-light">
+                            January 24, 2023
+                        </span>
+                        <span class="my-2 text-[#1A1E26] text-2xl font-medium -tracking-[0.5px]">
+                            12 Mistakes To Avoid When Buying Cannabis Online
+                        </span>
+                        <p class="mb-8 text-[#717378] text-sm font-normal leading-[20px]">
+                            Buying cannabis online can be a great way to get your hands on the products you need without
+                            leaving the comfort of your home. But …
+                        </p>
+                        <a href="#" class="text-[#17AF26] underline text-base">Read More</a>
+                    </div>
+                </div>
+                <!--box end-->
+                <!--box start-->
+                <div class=" flex flex-col ">
+                    <div class="mb-6 rounded-lg ">
+                        <img src="public/assets/images/edu-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <span class="text-[#717378] text-sm font-light">
+                            January 24, 2023
+                        </span>
+                        <span class="my-2 text-[#1A1E26] text-2xl font-medium -tracking-[0.5px]">
+                            How To Store Cannabis and Keep it Fresh and Potent?
+                        </span>
+                        <p class="mb-8 text-[#717378] text-sm font-normal leading-[20px]">
+                            Cannabis packaging has advanced dramatically in recent years, 
+                            whether your state has a medicinal marijuana programme, legal adult-use weed, or both. Most ...
+                        </p>
+                        <a href="#" class="text-[#17AF26] underline text-base">Read More</a>
+                    </div>
+                </div>
+                <!--box end-->
+                <!--box start-->
+                <div class=" flex flex-col ">
+                    <div class="mb-6 rounded-lg ">
+                        <img src="public/assets/images/edu-3.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-start">
+                        <span class="text-[#717378] text-sm font-light">
+                            January 24, 2023
+                        </span>
+                        <span class="my-2 text-[#1A1E26] text-2xl font-medium -tracking-[0.5px]">
+                            The Ultimate Guide to Checking the Quality of Cannabis – 10 Industry Leading Tips
+                        </span>
+                        <p class="mb-8 text-[#717378] text-sm font-normal leading-[20px]">
+                           Quality cannabis is a term used to describe cannabis products that meet specific standards of excellence. 
+                           It is essential to understand what quality cannabis means, …
+                        </p>
+                        <a href="#" class="text-[#17AF26] underline text-base">Read More</a>
+                    </div>
+                </div>
+                <!--box end-->
+        </div>
            </div>
         </section>
   </body>
