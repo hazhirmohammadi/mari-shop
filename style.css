@@ -29,7 +29,9 @@ body {
   background: url("public/assets/images/friends-bg.svg");
   background: #05422C;
 }
-
+.footer{
+  background: linear-gradient(180deg, #1A1E26 0%, #01100B 100%);
+}
 
 
 

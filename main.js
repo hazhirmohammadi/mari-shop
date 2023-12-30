@@ -1,6 +1,6 @@
 import './style.css';
 import {Style} from "./style.js";
-import {Pak1, Pak3, Pak2, BgHeader} from "./public/assets/images";
+import {Pak1, Pak3, Pak2} from "./public/assets/images";
 import {setupCounter} from './counter.js'
 import {
    Logo,
@@ -1184,7 +1184,7 @@ document.querySelector('#app').innerHTML = `
         </section >
         <!-- WEED EDUCATION-->
         <section class="${Style.maximumSize} ${Style.paddingMain}">
-           <div class="flex flex-col">
+           <div class="flex flex-col mb-[280px]">
               <div class="flex flex-row items-center justify-between pb-8 border-b-[1px] border-[#C8C9CB]">
                 <div>
                     <h6 class="text-[#1A1E26] lg:text-[32px] text-[24px] lg:leading-[38px] leading-[36px] font-medium
@@ -1259,6 +1259,36 @@ document.querySelector('#app').innerHTML = `
         </div>
            </div>
         </section>
+        <!-- Footer-->
+        <footer class="${Style.maximumSize} ${Style.paddingMain} footer mt-[120px]">
+           <div class="mt-32 flex flex-col relative size-full">
+                <!--Green Card-->
+                <div class="bg-[#05422C] rounded-3xl lg:p-16 p-6 w-full absolute -top-[40%]">
+                   <div class="flex flex-col border-b-[1px] border-[#346654] lg:pb-8 pb-2">
+                       <h6 class="lg:mb-6 mb-4 font-[600] text-white lg:text-[64px] uppercase text-[32px] lg:-tracking-[4px] -tracking-[1.5px] lg:leading-[70px] leading-[38px]">
+                           UNLOCK 20% OFF YOUR <br/> 
+                           FIRST ORDER
+                       </h6>
+                       <span class="text-[#C3D2CC] font-normal lg:text-[20px] text-sm
+                       lg:leading-[30px] leading-[21px]">
+                           Reveal coupon code by entering your email
+                       </span>
+                   </div>
+                   <div class="lg:pt-8 pt-2 flex items-center lg:flex-row flex-col">
+                       <input
+                               class="lg:mb-0 mb-4 w-full rounded-full bg-[#05422C] lg:px-[44px] lg:py-6 px-6 py-4 text-base text-[#648A7C] outline-none lg:mr-8  border-[#346654] border-[1px]"
+                               type="text"
+                               placeholder="Email Address"
+                       >
+                       <button class="bg-[#17AF26] lg:w-fit w-full rounded-full px-[44px] lg:py-6 py-4 text-white self-end whitespace-nowrap">Reveal coupon</button>
+                   </div>
+                </div>
+                <!--start footer-->
+                <div class="${Style.paddingMain} footer h-[500px]">
+                    
+                </div>
+           </div>
+        </footer>
   </body>
 `;
 //initial
@@ -1304,7 +1334,6 @@ commentContainers.forEach((item, i) => {
       console.log(23)
       item.scrollLeft += containerWidth;
    })
-
    comPreBtn[i].addEventListener('click', () => {
 
       console.log(24)
