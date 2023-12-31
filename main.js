@@ -1263,7 +1263,7 @@ document.querySelector('#app').innerHTML = `
         <footer class="${Style.maximumSize} ${Style.paddingMain} footer mt-[120px]">
            <div class="mt-32 flex flex-col relative size-full">
                 <!--Green Card-->
-                <div class="bg-[#05422C] rounded-3xl lg:p-16 p-6 w-full absolute -top-[40%]">
+                 <div class=" bg-[#05422C] rounded-3xl lg:p-16 p-6 w-full absolute md:-top-[40%] -top-[20%] ">
                    <div class="flex flex-col border-b-[1px] border-[#346654] lg:pb-8 pb-2">
                        <h6 class="lg:mb-6 mb-4 font-[600] text-white lg:text-[64px] uppercase text-[32px] lg:-tracking-[4px] -tracking-[1.5px] lg:leading-[70px] leading-[38px]">
                            UNLOCK 20% OFF YOUR <br/> 
@@ -1284,8 +1284,92 @@ document.querySelector('#app').innerHTML = `
                    </div>
                 </div>
                 <!--start footer-->
-                <div class="${Style.paddingMain} footer h-[500px]">
-                    
+                <div class=" lg:mt-[380px] mt-[240px]">
+                   <div class=" flex md:flex-row md:justify-start justify-center flex-col ">
+                     <!-- Logo  -->
+                     <div class=" w-full  flex flex-col justify-start mr-8 mb-4">
+                       <img class="mb-6 w-[173px] h-[42px]" src="public/assets/icons/Logo-white.svg" alt="Logo">
+                       <p class="text-[#9D9EA2] text-base leading-6 font-normal max-w-[276px    ]">
+                           #1 Canadian top, rated online dispensary that meets the customers needs in every single medical
+                           marijuana aspect. The team here at TopShelfBC is heavily involved in the Canadian cannabis industry
+                           for over 15 years. We strive to provide the top quality products, service and care at the lowest
+                           prices you’ll ever find.
+                       </p>
+                     </div>
+                     <!--Quick Links -->
+                     <div class=" w-full hidden md:flex flex-col md:justify-start justify-center md:pl-8 pl-0 md:mr-8">
+                          <span class="mb-5 text-[20px] text-white font-medium">QUICK LINK</span>
+                          <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                            <li>Track Your Order</li>
+                            <li>Shop All</li>
+                            <li>Flower</li>
+                            <li>Edibles</li>
+                            <li>Concentrates</li>
+                            <li>Refunds</li>
+                          </ul>
+                     </div>
+                     <!--Quick Links 2 -->
+                     <div class=" w-full hidden md:flex flex-col justify-start md:pl-8 pl-0 pt-[49px]">
+                           <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                             <li>Mushrooms</li>
+                             <li>Promotions / Bundles</li>
+                             <li>Support</li>
+                             <li>Reward</li>
+                             <li>Blog</li>
+                             <li>Shipping Faq</li>
+                           </ul>
+                        </div> 
+                      <div class="md:hidden flex flex-row w-full mb-6">
+                        <!--Quick Links -->
+                        <div class=" w-full flex flex-col md:justify-start justify-center  md:mr-8">
+                          <span class="md:mb-5 mb-4 text-[20px] text-white font-medium">QUICK LINK</span>
+                          <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                            <li>Track Your Order</li>
+                            <li>Shop All</li>
+                            <li>Flower</li>
+                            <li>Edibles</li>
+                            <li>Concentrates</li>
+                            <li>Refunds</li>
+                          </ul>
+                     </div>
+                        <!--Quick Links 2 -->
+                        <div class=" w-full flex flex-col justify-start  pt-[49px]">
+                           <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                             <li>Mushrooms</li>
+                             <li>Promotions / Bundles</li>
+                             <li>Support</li>
+                             <li>Reward</li>
+                             <li>Blog</li>
+                             <li>Shipping Faq</li>
+                           </ul>
+                        </div>
+                      </div>
+                   </div>
+                   
+                   
+                   <div class="flex md:flex-row flex-col w-full justify-end">
+                       <!--Quick Links -->
+                       <div class=" w-full  flex flex-col md:justify-start justify-center    pl-0 md:mr-8">
+                          <span class="mb-5 text-[20px] text-white font-medium">MORE</span>
+                          <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                            <li>Buy weed online in Canada</li>
+                            <li>Buy weed online in New Brunswick</li>
+                            <li>Buy weed online in Prince Edward Island</li>
+                            <li>Buy weed online in Northwest Territories</li>
+                            <li>Buy weed online in Saskatchewan</li>
+                          </ul>
+                     </div>
+                       <!--Quick Links 2 -->
+                       <div class=" w-full  flex flex-col justify-start md:pl-8 pl-0 pt-[49px]">
+                           <ul class="flex flex-col justify-start gap-y-4 text-[#9D9EA2] text-sm">
+                             <li>Buy weed online in Manitoba</li>
+                             <li>Buy weed online in Quitebec</li>
+                             <li>Buy weed online in British Columbia</li>
+                             <li>Buy weed online in Ontario</li>
+                             <li>Buy weed online in Alberta</li>
+                           </ul>
+                        </div> 
+                   </div>
                 </div>
            </div>
         </footer>
